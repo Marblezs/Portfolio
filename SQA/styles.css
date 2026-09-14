@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #141414;
+    background: linear-gradient(#141414, #202020); /* Texto blanco para que contraste con el fondo oscuro */
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #7C2020; 
+    padding: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    height: 80vh; 
+    padding: 40px;
+    border-bottom: 1px solid #333;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
