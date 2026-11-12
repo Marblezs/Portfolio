@@ -223,4 +223,51 @@ h3 {
     color: #58A6FF;
 }
 
-/* lo de la cards pequeñas */ 
+/* slider media ps*/ 
+.card-media-slider {
+  width: 100%;
+  height: 220px; 
+  overflow: hidden;
+  border-radius: 8px; /* Aun no viene la profe xd :v */
+  position: relative;
+}
+
+.slider-track {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  height: 100%;
+
+  animation: deslizar 9s infinite ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+.slide img,
+.slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-media-slider:hover .slider-track {
+  animation-play-state: paused;
+}
+
+@keyframes deslizar {
+  0%, 28% {
+    transform: translateX(0%);
+  }
+  33%, 61% {
+    transform: translateX(-100%);
+  }
+  66%, 94% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
