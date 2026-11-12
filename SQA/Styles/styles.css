@@ -252,19 +252,22 @@ h3 {
   display: block;
 }
 
-.card-media-slider:hover .slider-track {
+g.card-media-slider:hover .slider-track {
   animation-play-state: paused;
 }
 
 @keyframes deslizar {
-  0%, 28% {
+  0%, 18% {
     transform: translateX(0%);
   }
-  33%, 61% {
+  22%, 41% {
     transform: translateX(-100%);
   }
-  66%, 94% {
+  44%, 64% {
     transform: translateX(-200%);
+  }
+  67%, 80% {
+    transform: translateX(-300%);
   }
   100% {
     transform: translateX(0%);
